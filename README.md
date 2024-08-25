@@ -32,7 +32,7 @@
 
 **RLHF Deciphered: A Critical Analysis of Reinforcement Learning from Human Feedback for LLMs** 202404 [paper](https://arxiv.org/pdf/2404.08555)
 
-**Understanding the Learning Dynamics of Alignment with Human Feedback** ICML2024 [paper](https://arxiv.org/pdf/2403.18742)
+**Understanding the Learning Dynamics of Alignment with Human Feedback** ICML2024 [paper](https://arxiv.org/pdf/2403.18742):展示偏好数据集的分布如何影响模型更新,以及分析优化倾向于优先考虑具有更高优先级可区分性的某些行为
 
 ---
 
@@ -46,11 +46,15 @@ RLHF基础上进行相关改进
 
 **RLAIF vs. RLHF: Scaling Reinforcement Learning from Human Feedback with AI Feedback** ICML2024 [paper](https://arxiv.org/pdf/2309.00267)
 
+**Coactive Learning for Large Language Models using Implicit User Feedback** ICLR2024 [paper](https://openreview.net/pdf/33446063160eb8889f40c82a9595ca072a5590ee.pdf):RM训练集中，一组数据对一个值来源于LLM输出，另一个来源于用户对LLM结果编辑的修改，达到用户与LLM协同，实现个性化
+
 **Balancing Individual Preferences and Shared Objectives in Multiagent Reinforcement Learning** IJCAI2020 [paper](https://www.ijcai.org/proceedings/2020/0347.pdf)
 
 **MaxMin-RLHF: Alignment with Diverse Human Preference** ICML2024 [paper](https://openreview.net/attachment?id=8tzjEMF0Vq&name=pdf)
 
 **Mapping Social Choice Theory to RLHF** ICLR2024 [paper](https://arxiv.org/pdf/2404.13038)
+
+**Position: Social Choice Should Guide AI Alignment in Dealing with Diverse Human Feedback** IJCAI2024 [paper](https://openreview.net/pdf?id=IBFGTXCHNo)
 
 **PERSONALIZED SOUPS: PERSONALIZED LARGE LANGUAGE MODEL ALIGNMENT VIA POST-HOC PARAMETER MERGING** 202310 [paper](https://arxiv.org/pdf/2310.11564):将偏好分解为多个维度来实现个性化对齐
 
@@ -62,13 +66,13 @@ RLHF基础上进行相关改进
 
 一种高效且经典的改进方法:**DPO**
 
-绕开奖励函数的设置直接优化，降低复杂度
+**Direct Preference Optimization: Your Language Model is Secretly a Reward Model** NeurIPS2023 [paper](https://arxiv.org/pdf/2305.18290):绕开奖励函数的设置直接优化，降低复杂度
 
-**Direct Preference Optimization: Your Language Model is Secretly a Reward Model** NeurIPS2023 [paper](https://arxiv.org/pdf/2305.18290)
-:
 **Reward Model Learning vs. Direct Policy Optimization: A Comparative Analysis of Learning from Human Preferences** ICML2024 [paper](https://arxiv.org/pdf/2403.01857):系统地比较 RLHF 与 DPO 范式
 
 **Contrastive Preference Optimization: Pushing the Boundaries of LLM Performance in Machine Translation** ICML2024 [paper](https://arxiv.org/pdf/2401.08417):对数据的偏好可以视作一种对比学习，简化了损失函数的计算
+
+**Human Alignment of Large Language Models through Online Preference Optimisation** ICML2024 [paper](https://openreview.net/pdf?id=2RQqg2Y7Y6):说明身份策略优化 （IPO） 和 Nash Mirror Descent （Nash-MD）方法的等价性，引入混合算法
 
 **Generalized Preference Optimization: A Unified Approach to Offline Alignment** ICML2024 [paper](https://arxiv.org/pdf/2402.05749):给出偏好优化的广义视图，将DPO、IPO等情况包含其中
 
@@ -82,17 +86,11 @@ RLHF基础上进行相关改进
 
 采取其他方法实现对人类偏好的学习
 
-**Position: Social Choice Should Guide AI Alignment in Dealing with Diverse Human Feedback**
+**Linear Alignment: A Closed-form Solution for Aligning Human Preferences without Tuning and Feedback** ICML2024 [paper](https://arxiv.org/pdf/2401.11458)
 
-**Linear Alignment: A Closed-form Solution for Aligning Human Preferences without Tuning and Feedback**
+**Rewards-in-Context: Multi-objective Alignment of Foundation Models with Dynamic Preference Adjustment** ICML2024 [paper](https://arxiv.org/pdf/2402.10207):由于RL的复杂性，在其提示上下文中将基础模型对多个奖励的响应作为条件，应用监督微调以实现对齐，并支持在推理期间根据用户偏好进行动态调整
 
-**Human Alignment of Large Language Models through Online Preference Optimisation**
-
-**Rewards-in-Context: Multi-objective Alignment of Foundation Models with Dynamic Preference Adjustment**
-
-**Coactive Learning for Large Language Models using Implicit User Feedback**
-
-**Pragmatic Feature Preferences: Learning Reward-Relevant Preferences from Human Input**
+**Pragmatic Feature Preferences: Learning Reward-Relevant Preferences from Human Input**:
 
 **Active Preference Learning for Large Language Models**
 
