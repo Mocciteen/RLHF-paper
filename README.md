@@ -38,6 +38,10 @@
 
 RLHF基础上进行相关改进
 
+**Dueling RL: Reinforcement Learning with Trajectory Preferences** ICAIS2023 [paper](https://proceedings.mlr.press/v206/saha23a/saha23a.pdf):从基于偏好的轨迹反馈中学习，无需手动制作数字奖励模型
+
+**A State Augmentation based approach to Reinforcement Learning from Human Preferences** AAAI2023 [paper](https://arxiv.org/pdf/2302.08734):在RLHF技术上提出状态增强技术，增加RLHF的稳健性
+
 **Confronting Reward Model Overoptimization with Constrained RLHF** ICLR2024 [paper](https://arxiv.org/pdf/2310.04373):RM的不稳定性可能导致过度优化问题，引入带约束的强化学习，保证每个 RM 都保持在其作为有效代理的范围内
 
 **Iterative Data Smoothing: Mitigating Reward Overfitting and Overoptimization in RLHF** ICML2024 [paper](https://arxiv.org/pdf/2401.16335):在模型训练中不断更新数据的标签作为新的数据集，从而优化奖励模型学习效果
@@ -62,6 +66,8 @@ RLHF基础上进行相关改进
 
 **Reinforcement Learning from Human Feedback with Active Queries** 202402 [paper](https://arxiv.org/pdf/2402.09401):引入主动学习，主动选择可以给予较大信息量的数据对，作为训练策略的数据集
 
+**Pragmatic Feature Preferences: Learning Reward-Relevant Preferences from Human Input** ICML2024 [paper](https://openreview.net/attachment?id=OgG0I5toZZ&name=pdf):增加RM模型的细粒度，使得对偏好的判断更加准确
+
 ---
 
 一种高效且经典的改进方法:**DPO**
@@ -69,6 +75,8 @@ RLHF基础上进行相关改进
 **Direct Preference Optimization: Your Language Model is Secretly a Reward Model** NeurIPS2023 [paper](https://arxiv.org/pdf/2305.18290):绕开奖励函数的设置直接优化，降低复杂度
 
 **Reward Model Learning vs. Direct Policy Optimization: A Comparative Analysis of Learning from Human Preferences** ICML2024 [paper](https://arxiv.org/pdf/2403.01857):系统地比较 RLHF 与 DPO 范式
+
+**Active Preference Learning for Large Language Models** ICML2024[paper](https://arxiv.org/pdf/2402.08114)
 
 **Contrastive Preference Optimization: Pushing the Boundaries of LLM Performance in Machine Translation** ICML2024 [paper](https://arxiv.org/pdf/2401.08417):对数据的偏好可以视作一种对比学习，简化了损失函数的计算
 
@@ -90,20 +98,8 @@ RLHF基础上进行相关改进
 
 **Rewards-in-Context: Multi-objective Alignment of Foundation Models with Dynamic Preference Adjustment** ICML2024 [paper](https://arxiv.org/pdf/2402.10207):由于RL的复杂性，在其提示上下文中将基础模型对多个奖励的响应作为条件，应用监督微调以实现对齐，并支持在推理期间根据用户偏好进行动态调整
 
-**Pragmatic Feature Preferences: Learning Reward-Relevant Preferences from Human Input**:
+**CONTRASTIVE PREFERENCE LEARNING: LEARNING FROM HUMAN FEEDBACK WITHOUT RL** ICLR2024 [paper](https://openreview.net/pdf?id=iX1RjVQODj):利用最大熵的原理，使用对比偏好学习（CPL），从偏好中学习最优策略，无需学习奖励函数，从而规避了对 RL 的需求
 
-**Active Preference Learning for Large Language Models**
+**LaMP: When Large Language Models Meet Personalization** ACL2024 [paper](https://arxiv.org/pdf/2304.11406):强调个性化的重要性，进行一系列基准实验
 
-**CONTRASTIVE PREFERENCE LEARNING: LEARNING FROM HUMAN FEEDBACK WITHOUT RL** ICLR2024 [paper](https://openreview.net/pdf?id=iX1RjVQODj)
-
-**Quality Diversity through Human Feedback: Towards Open-Ended Diversity-Driven Optimization**
-
-**A State Augmentation based approach to Reinforcement Learning from Human Preferences**
-
-**Dueling RL: Reinforcement Learning with Trajectory Preferences**
-
-**Balancing Individual Preferences and Shared Objectives in Multiagent Reinforcement Learning**
-
-**LaMP: When Large Language Models Meet Personalization**
-
-**Aligning LLM Agents by Learning Latent Preference from User Edits**
+**Aligning LLM Agents by Learning Latent Preference from User Edits** 202406 [paper](https://arxiv.org/pdf/2404.15269)
